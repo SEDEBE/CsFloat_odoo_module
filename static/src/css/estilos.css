@@ -1,0 +1,42 @@
+/* static/src/css/estilos.css */
+
+form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;  /* Alinea los elementos en columna */
+    gap: 15px;  /* Espaciado entre los elementos */
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 4px;  /* Borde redondeado para los inputs */
+    border: 1px solid #ccc;  /* Bordes sutiles */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;  /* Borde redondeado para el botón */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Efecto de sombra en hover */
+}
+
+@media (max-width: 768px) {
+    form {
+        margin: 10px;
+    }
+
+    input[type="text"], button {
+        width: 100%;  /* Los elementos se expanden en pantallas pequeñas */
+        box-sizing: border-box;  /* Para incluir el padding dentro del tamaño total */
+    }
+}
+

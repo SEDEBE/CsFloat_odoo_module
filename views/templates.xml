@@ -1,0 +1,20 @@
+<!--views/templates.xml-->
+<odoo>
+    <template id="template_buscar_skin" name="Buscar Skin">
+        <form action="/precio_skin" method="get">
+            <input type="text" name="nombre_skin" placeholder="Nombre de la skin"/>
+            <button type="submit">Buscar</button>
+        </form>
+    </template>
+
+    <template id="template_precio_skin" name="Precio de la Skin">
+        <t t-if="datos">
+            <h1>Precio de <t t-esc="datos['nombre']"/></h1>
+            <p>Precio: <t t-esc="datos['precio']"/> USD</p>
+            <!-- Muestra más detalles según los datos disponibles -->
+        </t>
+        <t t-else="">
+            <p>Skin no encontrada.</p>
+        </t>
+    </template>
+</odoo>

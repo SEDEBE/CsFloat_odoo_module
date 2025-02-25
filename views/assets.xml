@@ -1,0 +1,9 @@
+<!-- views/assets.xml -->
+<odoo>
+    <template id="assets_frontend" name="CSFloat Assets" inherit_id="web.assets_frontend">
+        <xpath expr="." position="inside">
+            <link rel="stylesheet" type="text/css" href="/mi_modulo_csfloat/static/src/css/estilos.css"/>
+            <script type="text/javascript" src="/mi_modulo_csfloat/static/src/js/funciones.js"></script>
+        </xpath>
+    </template>
+</odoo>
